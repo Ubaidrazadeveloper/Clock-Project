@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.clock-container {
+  padding: 2rem 3rem;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+  text-align: center;
+}
+
+#clock {
+  color: #0f0;
+  font-size: 6vw;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+}
+
+/* Responsive scaling */
+@media (max-width: 768px) {
+  #clock {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock-container {
+    padding: 1.5rem 2rem;
+  }
+
+  #clock {
+    font-size: 12vw;
+  }
+}
